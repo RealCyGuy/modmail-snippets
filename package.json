@@ -1,0 +1,25 @@
+{
+    "name": "modmailpluginsnippets",
+    "displayName": "ModmailPluginSnippets",
+    "description": "Snippets for Modmail plugins.",
+    "version": "0.0.1",
+    "logo": "logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/realcyguy/modmail-snippets.git"
+    },
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "Normal Modmail plugin.": {
+        "prefix": "mp",
+        "body": [
+          "import discord",
+          "from discord.ext import commands",
+          "",
+          "import logger",
+          "logger = logging.getLogger(\"Modmail\")",
+          "",
+          "class ${1:YourPluginName}(commands.Cog):",
+          "    \"\"\"${2:Description.}\"\"\"",
+          "    def __init__(self, bot):",
+          "        self.bot = bot",
+          "        self.db = bot.plugin_db.get_partition(self)",
+          "",
+          "    ${0}",
+          "",
+          "def setup(bot):",
+          "    bot.add_cog(${1:YourPluginName}(bot))"
+        ],
+        "description": "Makes a Modmail plugin."
+      },
+      "Basic Modmail plugin.": {
+        "prefix": "mpbasic",
+        "body": [
+          "import discord",
+          "from discord.ext import commands",
+          "",
+          "class ${1:YourPluginName}(commands.Cog):",
+          "    \"\"\"${2:Description.}\"\"\"",
+          "    def __init__(self, bot):",
+          "        self.bot = bot",
+          "",
+          "    ${0}",
+          "",
+          "def setup(bot):",
+          "    bot.add_cog(${1:YourPluginName}(bot))"
+        ],
+        "description": "Makes a very basic Modmail plugin. Without logger or database."
+      },
+      "Tutorial plugin.": {
+        "prefix": "mptutorial",
+        "body": [
+          "import discord",
+          "from discord.ext import commands",
+          "",
+          "class ${1:YourPluginName}(commands.Cog): # Your cog is here.",
+          "    \"\"\"${2:Description.}\"\"\"",
+          "    def __init__(self, bot): # Init.",
+          "        self.bot = bot",
+          "",
+          "    @commands.command() # Decorator.",
+          "    async def commandname(self, ctx): # The command.",
+          "        await ctx.send(\"You used the command!\") # What it does.",
+          "",
+          "    @commands.Cog.listener() # Decorator.",
+          "    async def on_message(self, ctx): # The event it waits for.",
+          "        await ctx.send(\"You sent a message!\") # What it does.",
+          "",
+          "    # Another command would go here!",
+          "",
+          "def setup(bot):",
+          "    bot.add_cog(${1:YourPluginName}(bot))"
+        ],
+        "description": "Basic command and basic listener."
+      }
+}
