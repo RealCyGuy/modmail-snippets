@@ -50,11 +50,11 @@
           "    def __init__(self, bot): # Init.",
           "        self.bot = bot",
           "",
-          "    @commands.command() # Decorator.",
+          "    @commands.command() # Command Decorator.",
           "    async def commandname(self, ctx): # The command.",
           "        await ctx.send(\"You used the command!\") # What it does.",
           "",
-          "    @commands.Cog.listener() # Decorator.",
+          "    @commands.Cog.listener() # Event Decorator.",
           "    async def on_message(self, ctx): # The event it waits for.",
           "        await ctx.send(\"You sent a message!\") # What it does.",
           "",
@@ -64,5 +64,23 @@
           "    bot.add_cog(${1:YourPluginName}(bot))"
         ],
         "description": "Basic command and basic listener."
+      },
+      "Makes a command.": {
+        "prefix": "cmd",
+        "body": [
+          "@commands.command()",
+          "async def ${1:commandname}(self, ctx):",
+          "    ${2:pass}"
+        ],
+        "description": "Makes a command."
+      },
+      "Makes a event/listener.": {
+        "prefix": ["event", "listener"],
+        "body": [
+          "@commands.Cog.listener()",
+          "async def ${1:event}(self):",
+          "    ${2:pass}"
+        ],
+        "description": "Makes a event/listener."
       }
 }

@@ -1,6 +1,14 @@
 # Change Log
 
-All notable changes to the "modmailpluginsnippets" extension will be documented in this file.
+## 1.0.1
+
+### Added
+
+- Snippets.
+
+### Changed
+
+- Markdown files.
 
 ## 1.0.0
 

@@ -2,7 +2,7 @@
     "name": "modmailpluginsnippets",
     "displayName": "ModmailPluginSnippets",
     "description": "Snippets for Modmail plugins.",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "logo": "logo.png",
     "repository": {
         "type": "git",
