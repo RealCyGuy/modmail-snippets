@@ -8,6 +8,8 @@
         "type": "git",
         "url": "https://github.com/realcyguy/modmail-snippets.git"
     },
+    "license": "MIT",
+    "publisher": "cyrus",
     "engines": {
         "vscode": "^1.42.0"
     },
