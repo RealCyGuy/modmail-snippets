@@ -55,8 +55,8 @@
           "        await ctx.send(\"You used the command!\") # What it does.",
           "",
           "    @commands.Cog.listener() # Event Decorator.",
-          "    async def on_message(self, ctx): # The event it waits for.",
-          "        await ctx.send(\"You sent a message!\") # What it does.",
+          "    async def on_message(self, message): # The event it waits for.",
+          "        await message.channel.send(\"You sent a message!\") # What it does.",
           "",
           "    # Another command would go here!",
           "",
@@ -66,7 +66,7 @@
         "description": "Basic command and basic listener."
       },
       "Makes a command.": {
-        "prefix": "cmd",
+        "prefix": ["cmd", "command"],
         "body": [
           "@commands.command()",
           "async def ${1:commandname}(self, ctx):",

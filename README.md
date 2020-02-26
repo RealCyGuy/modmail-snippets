@@ -1,7 +1,9 @@
 # ModmailPluginSnippets
+
 Snippets to make modmail plugins.
 
 ## Snippets
+
 How to use a snippet: write the prefix then press `TAB`.  
 
 `mp`: Modmail plugin.  

@@ -4,7 +4,8 @@
 
 ### Added
 
-- Snippets.
+- Command snippet.
+- Event snippet.
 
 ### Changed
 
