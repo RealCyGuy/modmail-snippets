@@ -2,11 +2,11 @@
     "name": "modmailpluginsnippets",
     "displayName": "ModmailPluginSnippets",
     "description": "Snippets for Modmail plugins.",
-    "version": "1.0.1",
-    "logo": "logo.png",
+    "version": "1.0.3",
+    "icon": "logo.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/realcyguy/modmail-snippets.git"
+        "url": "https://github.com/realcyguy/modmail-snippets"
     },
     "license": "MIT",
     "publisher": "cyrus",
